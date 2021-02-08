@@ -7,6 +7,17 @@ bin-release/
 # Other files and folders
 .settings/
 
+# Dependency directories
+MOB/node_modules/
+Coordinador/node_modules/
+ServidorReplicacion/node_modules/
+jspm_packages/
+
+#
+MOB/.env
+Coordinador/.env
+ServidorReplicacion/.env
+
 # Executables
 *.swf
 *.air
