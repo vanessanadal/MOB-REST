@@ -77,3 +77,5 @@
 [21-02-09 06:28:52] | [34mINFO[39m | +9ms | App listening
 [21-02-09 06:32:40] | [34mINFO[39m | +328ms | POST /mob/cliente/replicar
 [21-02-09 06:41:13] | [34mINFO[39m | +19ms | POST /mob/cliente/replicar
+[21-02-09 10:26:27] | [34mINFO[39m | +53ms | App listening
+[21-02-09 10:27:37] | [34mINFO[39m | +154ms | POST /mob/cliente/replicar
