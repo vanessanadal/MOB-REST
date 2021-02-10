@@ -1,1 +1,79 @@
 [21-02-07 08:08:59] | [34mINFO[39m | +3ms | App listening
+[21-02-08 05:39:31] | [34mINFO[39m | +4ms | App listening
+[21-02-09 12:10:52] | [34mINFO[39m | +2ms | App listening
+[21-02-09 12:10:59] | [34mINFO[39m | +1ms | POST /mob/replicar
+[21-02-09 12:10:59] | [31mERROR[39m | +2ms | ERROR: Not Found
+[21-02-09 12:12:35] | [34mINFO[39m | +0ms | POST /mob/cliente/replicar
+[21-02-09 12:17:33] | [34mINFO[39m | +5ms | App listening
+[21-02-09 12:17:36] | [34mINFO[39m | +44ms | POST /mob/cliente/replicar
+[21-02-09 12:18:40] | [34mINFO[39m | +3ms | App listening
+[21-02-09 12:18:46] | [34mINFO[39m | +6ms | POST /mob/cliente/replicar
+[21-02-09 12:18:47] | [34mINFO[39m | +9ms | GET /socket.io/?EIO=4&transport=polling&t=NU50s7e&b64=1
+[21-02-09 12:18:47] | [31mERROR[39m | +2ms | ERROR: Not Found
+[21-02-09 12:18:48] | [34mINFO[39m | +0ms | GET /socket.io/?EIO=4&transport=polling&t=NU50sR0&b64=1
+[21-02-09 12:18:48] | [31mERROR[39m | +1ms | ERROR: Not Found
+[21-02-09 12:18:50] | [34mINFO[39m | +0ms | GET /socket.io/?EIO=4&transport=polling&t=NU50swH&b64=1
+[21-02-09 12:18:50] | [31mERROR[39m | +2ms | ERROR: Not Found
+[21-02-09 12:18:55] | [34mINFO[39m | +5ms | GET /socket.io/?EIO=4&transport=polling&t=NU50u2-&b64=1
+[21-02-09 12:18:55] | [31mERROR[39m | +1ms | ERROR: Not Found
+[21-02-09 12:19:00] | [34mINFO[39m | +1ms | GET /socket.io/?EIO=4&transport=polling&t=NU50vHZ&b64=1
+[21-02-09 12:19:00] | [31mERROR[39m | +3ms | ERROR: Not Found
+[21-02-09 12:19:42] | [34mINFO[39m | +5ms | App listening
+[21-02-09 12:19:46] | [34mINFO[39m | +18ms | POST /mob/cliente/replicar
+[21-02-09 12:19:46] | [34mINFO[39m | +23ms | GET /socket.io/?EIO=4&transport=polling&t=NU514cK&b64=1
+[21-02-09 12:19:47] | [31mERROR[39m | +33ms | ERROR: Not Found
+[21-02-09 12:19:48] | [34mINFO[39m | +3ms | GET /socket.io/?EIO=4&transport=polling&t=NU51534&b64=1
+[21-02-09 12:19:48] | [31mERROR[39m | +2ms | ERROR: Not Found
+[21-02-09 12:19:50] | [34mINFO[39m | +1ms | GET /socket.io/?EIO=4&transport=polling&t=NU515bN&b64=1
+[21-02-09 12:19:50] | [31mERROR[39m | +1ms | ERROR: Not Found
+[21-02-09 12:19:55] | [34mINFO[39m | +1ms | GET /socket.io/?EIO=4&transport=polling&t=NU516jl&b64=1
+[21-02-09 12:19:55] | [31mERROR[39m | +1ms | ERROR: Not Found
+[21-02-09 12:28:33] | [34mINFO[39m | +3ms | App listening
+[21-02-09 12:28:43] | [34mINFO[39m | +11ms | POST /mob/cliente/replicar
+[21-02-09 12:29:22] | [34mINFO[39m | +2ms | POST /mob/cliente/replicar
+[21-02-09 01:34:53] | [34mINFO[39m | +3ms | App listening
+[21-02-09 01:48:19] | [34mINFO[39m | +3ms | POST /mob/cliente/replicar
+[21-02-09 01:50:15] | [34mINFO[39m | +58ms | POST /mob/cliente/replicar
+[21-02-09 02:33:13] | [34mINFO[39m | +78ms | App listening
+[21-02-09 03:00:07] | [34mINFO[39m | +19ms | POST /mob/cliente/replicar
+[21-02-09 03:08:30] | [34mINFO[39m | +72ms | App listening
+[21-02-09 03:28:28] | [34mINFO[39m | +4s | POST /mob/cliente/replicar
+[21-02-09 03:47:51] | [34mINFO[39m | +48ms | App listening
+[21-02-09 03:52:01] | [34mINFO[39m | +15ms | POST /mob/cliente/replicar
+[21-02-09 04:09:25] | [34mINFO[39m | +599ms | POST /mob/cliente/replicar
+[21-02-09 04:42:04] | [34mINFO[39m | +10ms | App listening
+[21-02-09 04:42:40] | [34mINFO[39m | +1s | POST /mob/cliente/replicar
+[21-02-09 04:47:00] | [34mINFO[39m | +10ms | App listening
+[21-02-09 04:47:09] | [34mINFO[39m | +536ms | POST /mob/cliente/replicar
+[21-02-09 04:49:02] | [34mINFO[39m | +68ms | App listening
+[21-02-09 04:49:19] | [34mINFO[39m | +683ms | POST /mob/cliente/replicar
+[21-02-09 04:50:24] | [34mINFO[39m | +9ms | App listening
+[21-02-09 04:58:51] | [34mINFO[39m | +12ms | App listening
+[21-02-09 05:00:08] | [34mINFO[39m | +7ms | App listening
+[21-02-09 05:02:00] | [34mINFO[39m | +14ms | App listening
+[21-02-09 05:02:05] | [34mINFO[39m | +549ms | POST /mob/cliente/replicar
+[21-02-09 05:42:14] | [34mINFO[39m | +7ms | App listening
+[21-02-09 05:49:12] | [34mINFO[39m | +162ms | POST /mob/cliente/replicar
+[21-02-09 05:55:55] | [34mINFO[39m | +10ms | App listening
+[21-02-09 05:59:54] | [34mINFO[39m | +24ms | App listening
+[21-02-09 06:00:12] | [34mINFO[39m | +9ms | App listening
+[21-02-09 06:01:03] | [34mINFO[39m | +984ms | App listening
+[21-02-09 06:02:06] | [34mINFO[39m | +5ms | POST /mob/cliente/replicar
+[21-02-09 06:12:45] | [34mINFO[39m | +8ms | App listening
+[21-02-09 06:13:22] | [34mINFO[39m | +315ms | App listening
+[21-02-09 06:13:41] | [34mINFO[39m | +34ms | App listening
+[21-02-09 06:13:49] | [34mINFO[39m | +32ms | App listening
+[21-02-09 06:14:01] | [34mINFO[39m | +20ms | POST /mob/cliente/replicar
+[21-02-09 06:18:17] | [34mINFO[39m | +11ms | App listening
+[21-02-09 06:18:53] | [34mINFO[39m | +44ms | App listening
+[21-02-09 06:24:25] | [34mINFO[39m | +134ms | POST /mob/cliente/replicar
+[21-02-09 06:24:50] | [34mINFO[39m | +130ms | App listening
+[21-02-09 06:24:53] | [34mINFO[39m | +334ms | POST /mob/cliente/replicar
+[21-02-09 06:25:28] | [34mINFO[39m | +42ms | App listening
+[21-02-09 06:25:41] | [34mINFO[39m | +5ms | POST /mob/cliente/replicar
+[21-02-09 06:27:09] | [34mINFO[39m | +1s | App listening
+[21-02-09 06:28:17] | [34mINFO[39m | +84ms | App listening
+[21-02-09 06:28:33] | [34mINFO[39m | +12ms | POST /mob/cliente/replicar
+[21-02-09 06:28:52] | [34mINFO[39m | +9ms | App listening
+[21-02-09 06:32:40] | [34mINFO[39m | +328ms | POST /mob/cliente/replicar
+[21-02-09 06:41:13] | [34mINFO[39m | +19ms | POST /mob/cliente/replicar

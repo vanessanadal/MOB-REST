@@ -4,11 +4,11 @@ const metodosController = require("./metodos.controller");
 
 
 // Manipulación de datos del usuario 
-/*
-router.get("/ReplicarObjetos",clienteController.ReplicarObjetos);
-router.post("/RestaurarObjetos",clienteController.RestaurarObjetos);
-router.post("/HacerReplica",clienteController.HacerReplica);
-router.post("/RecibirObjetos",clienteController.RecibirObjetos);*/
+
+router.post("/ReplicarObjetos",metodosController.ReplicarObjetos);
+/*router.post("/RestaurarObjetos",metodosController.RestaurarObjetos);
+router.post("/HacerReplica",metodosController.HacerReplica);
+router.post("/RecibirObjetos",metodosController.RecibirObjetos);*/
 
 
 
