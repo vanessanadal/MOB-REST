@@ -193,3 +193,32 @@
 [21-02-12 02:08:05] | [34mINFO[39m | +3ms | App listening
 [21-02-12 02:08:59] | [34mINFO[39m | +1ms | POST /mob/cliente/crear
 [21-02-12 02:09:40] | [34mINFO[39m | +1ms | POST /mob/cliente/replicar
+[21-02-12 02:49:21] | [34mINFO[39m | +3ms | App listening
+[21-02-12 03:00:05] | [34mINFO[39m | +3ms | App listening
+[21-02-12 03:01:03] | [34mINFO[39m | +3ms | App listening
+[21-02-12 03:01:08] | [34mINFO[39m | +3ms | App listening
+[21-02-12 03:01:15] | [34mINFO[39m | +5ms | App listening
+[21-02-12 03:01:19] | [34mINFO[39m | +3ms | App listening
+[21-02-12 03:01:50] | [34mINFO[39m | +6ms | App listening
+[21-02-12 03:02:06] | [34mINFO[39m | +3ms | App listening
+[21-02-12 03:02:09] | [34mINFO[39m | +4ms | App listening
+[21-02-12 03:02:14] | [34mINFO[39m | +3ms | App listening
+[21-02-12 03:03:30] | [34mINFO[39m | +3ms | App listening
+[21-02-12 03:05:39] | [34mINFO[39m | +5ms | App listening
+[21-02-12 03:05:41] | [34mINFO[39m | +2ms | App listening
+[21-02-12 03:05:51] | [34mINFO[39m | +2ms | App listening
+[21-02-12 03:05:56] | [34mINFO[39m | +3ms | App listening
+[21-02-12 08:15:47] | [34mINFO[39m | +3ms | App listening
+[21-02-12 08:17:41] | [34mINFO[39m | +1ms | GET /mob/cliente/consultar
+[21-02-12 08:18:12] | [34mINFO[39m | +2ms | GET /mob/cliente/crear
+[21-02-12 08:18:12] | [31mERROR[39m | +0ms | ERROR: Not Found
+[21-02-12 08:18:23] | [34mINFO[39m | +3ms | POST /mob/cliente/crear
+[21-02-12 08:18:42] | [34mINFO[39m | +2ms | GET /mob/cliente/consultar
+[21-02-12 08:19:31] | [34mINFO[39m | +1ms | DELETE /mob/cliente/eliminar
+[21-02-12 08:20:22] | [34mINFO[39m | +206ms | App listening
+[21-02-12 08:20:24] | [34mINFO[39m | +10ms | App listening
+[21-02-12 08:20:31] | [34mINFO[39m | +5ms | App listening
+[21-02-12 08:20:40] | [34mINFO[39m | +115ms | GET /mob/cliente/consultar
+[21-02-12 08:21:05] | [34mINFO[39m | +2ms | GET /mob/cliente/crear
+[21-02-12 08:21:05] | [31mERROR[39m | +2ms | ERROR: Not Found
+[21-02-12 08:21:10] | [34mINFO[39m | +1ms | POST /mob/cliente/crear

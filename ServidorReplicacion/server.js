@@ -24,6 +24,7 @@ io = io.listen(http);
                       var obj = data.objetos;
 
                       if(accion=="commit"){
+                        console.log('Servidor de replicas envio VOTE_COMMIT');
                         console.log('Creando REPLICA...');
                         obj = parser.toXml(obj, { reversible: true });
                         fs.writeFile("replica.xml", obj, () => {});

@@ -26,6 +26,8 @@ io = io.listen(http);
                     });
             });
 
+        
+
          //Ahora en replicarObjetos el Coordinador es Cliente y Servidor de replicas es Servidor
          
          function ReplicarObjetos(replica) {
@@ -42,6 +44,21 @@ io = io.listen(http);
 
 
          }
+
+       /*  function RestaurarObjetos(replica) {
+         
+          const socket = io_client("http://localhost:3050"); 
+
+         
+          socket.on('connect', () => 
+          { 
+          socket.emit('data', replica);
+          socket.disconnect();
+          }); 
+          console.log('Coordinador hace VOTE_REQUEST');
+
+
+         } */
         
          
        

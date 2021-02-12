@@ -77,7 +77,6 @@ module.exports = {
             var parser = require("xml2json");
             fs.readFile('bd.xml', (err, data) => {
             obj = JSON.parse(parser.toJson(data, { reversible: true }));
-            console.log("Objetos: ", obj.objetos.objeto[0])
             obj.objetos.objeto.forEach((objeto, i) => {
                   if ( objeto.nombre.$t === req.body.nombre.$t && objeto.fecha.$t === req.body.fecha.$t && objeto.accion.$t === req.body.accion.$t) {
                     obj.objetos.objeto.splice(i, 1);
@@ -101,7 +100,8 @@ module.exports = {
 
 
     replicar: async function (req, res, next) {
-        console.log("Objeto recibido:"  + req.body);
+       try{
+         console.log("Objeto recibido:"  + req.body);
         let replica;
         var parser = require("xml2json");
         
@@ -112,7 +112,7 @@ module.exports = {
               console.log('Cliente llama a metodo REPLICAR'); 
               const socket = io("http://localhost:3030"); 
               
-              replica = { accion: req.body.accion, objetos: obj}
+              replica = { accion: req.body.accion, objetos: obj, tipo:"replica"}
 
               console.log('MOB se conecta a Coordinador');
               socket.on('connect', () => 
@@ -124,9 +124,42 @@ module.exports = {
 
           });
 
-        
+          res.status(200).json({ message: "Se hizo la replica satisfactoriamente"});
+       }
+       catch (e) {
+        res.status(500).send({
+          message: "Error en la replicacion. Se abortaran los cambios",
+        });
+        next(e);
+      } 
 
-        res.json({});
+    },
 
-    }
+   /* restaurar: async function (req, res, next) {
+      console.log("Objeto recibido:"  + req.body);
+      let restauracion = { tipo:"restauracion"}
+      var parser = require("xml2json");
+      
+      fs.readFile('bd.xml', (err, data) => {
+        obj = JSON.parse(parser.toJson(data, { reversible: true }));
+
+            console.log(obj)
+            console.log('Cliente llama a metodo REStAURAR'); 
+            const socket = io("http://localhost:3030"); 
+            
+            replica = { accion: req.body.accion, objetos: obj}
+
+            console.log('MOB se conecta a Coordinador');
+            socket.on('connect', () => 
+            { 
+            socket.emit('REPLICAR', replica);
+            socket.disconnect();
+            }); 
+            console.log('MOB llamando a RestaurarObjetos en Coordinador');
+
+        });
+      res.json({});
+  }
+
+  */
 }
