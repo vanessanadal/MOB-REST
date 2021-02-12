@@ -5,15 +5,13 @@ const fs = require("fs");
 //const xml2js = require("xml2js");
 const util = require ("util");
 module.exports = {
-
-    
+  
   consultar: async function (req, res, next) {
     try {
         var parser = require("xml2json");
         let obj;
 
-        console.log(req.body);
-        console.log('Cliente llama a metodo Consultar'); // Connect to server 
+        console.log('Cliente llama a metodo Consultar'); 
         
         fs.readFile('bd.xml', (err, data) => {
         obj = JSON.parse(parser.toJson(data, { reversible: true })).objetos.objeto;
@@ -33,35 +31,31 @@ module.exports = {
     crear: async function (req, res, next) {
         try {
             console.log(req.body);
-            console.log('Cliente llama a metodo CREAR'); // Connect to server 
+            console.log('Cliente llama a metodo CREAR'); 
             var parser = require("xml2json");
+
          fs.readFile('bd.xml', (err, data) => {
+
             obj = JSON.parse(parser.toJson(data, { reversible: true }));
-            console.log("Objetos: ", obj.objetos.objeto[0])
+
+            console.log("Objetos actuales: ", obj.objetos)
+
             if (obj.objetos && obj.objetos.objeto[1]) {
                 obj.objetos.objeto.push(req.body);
-              } else {
-                if (obj.objetos && obj.objetos.objeto) {
+              } 
+            else { if (obj.objetos && obj.objetos.objeto) {
                   obj = {
                     objetos: {
-                      objeto: [
-                        {
+                      objeto: [{
                           nombre: obj.objetos.objeto.nombre,
                           fecha: obj.objetos.objeto.fecha,
-                          accion: obj.objetos.objeto.accion,
-                        },
-                        req.body,
-                      ],
-                    },
-                  };
-                } else {
+                          accion: obj.objetos.objeto.accion, }, req.body, ], },  };
+                 } else {
                   obj = {
                     objetos: {
-                      objeto: [req.body],
-                    },
-                  };
+                      objeto: [req.body], }, }; }
                 }
-              }
+
               obj = parser.toXml(obj, { reversible: true });
               fs.writeFile('bd.xml', obj, () => {});
             });
@@ -85,13 +79,11 @@ module.exports = {
             obj = JSON.parse(parser.toJson(data, { reversible: true }));
             console.log("Objetos: ", obj.objetos.objeto[0])
             obj.objetos.objeto.forEach((objeto, i) => {
-                  if (
-                    objeto.nombre.$t === req.body.nombre.$t &&
-                    objeto.fecha.$t === req.body.fecha.$t &&
-                    objeto.accion.$t === req.body.accion.$t
-                  ) {
+                  if ( objeto.nombre.$t === req.body.nombre.$t && objeto.fecha.$t === req.body.fecha.$t && objeto.accion.$t === req.body.accion.$t) {
                     obj.objetos.objeto.splice(i, 1);
                     obj = parser.toXml(obj, { reversible: true });
+
+                    //Sobreescribe el nuevo contenido en el archivo xml
                     fs.writeFile("bd.xml", obj, () => {});
                     res.status(200).json({ message: "Se borro correctamente el objeto"});
                   }
@@ -109,17 +101,30 @@ module.exports = {
 
 
     replicar: async function (req, res, next) {
-        console.log(req.body);
+        console.log("Objeto recibido:"  + req.body);
+        let replica;
+        var parser = require("xml2json");
         
-        console.log('Cliente llama a metodo REPLICAR'); // Connect to server 
-        const socket = io("http://localhost:3030"); 
-    
-        socket.on('connect', () => 
-        { 
-        socket.emit('data', req.body);
-        socket.disconnect();
-        }); 
-        console.log('MOB se conecta a Coordinador');
+        fs.readFile('bd.xml', (err, data) => {
+          obj = JSON.parse(parser.toJson(data, { reversible: true }));
+
+              console.log(obj)
+              console.log('Cliente llama a metodo REPLICAR'); 
+              const socket = io("http://localhost:3030"); 
+              
+              replica = { accion: req.body.accion, objetos: obj}
+
+              console.log('MOB se conecta a Coordinador');
+              socket.on('connect', () => 
+              { 
+              socket.emit('REPLICAR', replica);
+              socket.disconnect();
+              }); 
+              console.log('MOB llamando a ReplicarObjetos en Coordinador');
+
+          });
+
+        
 
         res.json({});
 
